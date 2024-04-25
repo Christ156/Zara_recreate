@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zara Indonesia | Koleksi Terbaru Online</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://static.zara.net/stdstatic/5.40.1//images/favicon-32x32.png"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="nav-icon">
+        <!-- <img src="" alt=""> -->
+        <a href="index.html">
+          <svg
+            aria-label="Logo ZARA Indonesia. Buka laman utama"
+            class="layout-catalog-logo-icon"
+            viewBox="0 0 132 55"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M105.673.035l19.557 53.338 6.77.002v.383h-21.548v-.383h6.344l-6.431-17.54H97.311v.007l.07.204c.521 1.548.78 3.17.764 4.803v6.575c0 3.382 1.494 6.81 4.347 6.81 1.675 0 3.012-.59 4.604-2.046l.227.211C105.594 54.224 103.5 55 100.36 55c-2.37 0-4.398-.57-6.03-1.693l-.309-.222c-2.148-1.624-3.542-4.278-4.142-7.89l-.096-.583-.1-.882-.01-.152-3.599 9.792h5.107v.384H80.496v-.384h5.162l3.951-10.753v-.023a34.924 34.924 0 0 1-.075-1.906v-4.693c0-5.77-4.29-9.08-11.771-9.08H70.41v26.458h6.371v.383h-24.9v-.383h6.345l-6.431-17.54H33.948l-6.371 17.346.266-.044c8.366-1.442 12.213-7.827 12.265-14.55h.388v15.171H0L30.06 2.185H17.972C7.954 2.185 3.42 9.922 3.35 17.635h-.387V1.8h36.488l-.222.385L9.396 53.373h15.695c.39 0 .778-.019 1.169-.05.26-.018.522-.044.788-.077l.095-.01L46.703 0h.387l.013.035 15.369 41.916V2.185h-6.328v-.39h21.778c10.467 0 17.774 5.372 17.774 13.068 0 5.612-5.005 10.27-12.45 11.595l-1.367.174 1.377.14c4.515.517 8.1 1.906 10.641 4.127l.017.016L105.273 0h.386l.014.035zm-8.552 35.32l.038.094h13.061l-8.773-23.928-7.221 19.67.039.037.367.364a11.876 11.876 0 0 1 2.489 3.762zM70.415 26.53V2.185h5.611c7.496 0 11.454 4.414 11.454 12.76 0 8.877-2.272 11.585-9.717 11.585h-7.348zM42.882 11.521L34.09 35.45h17.565L42.882 11.52z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="nav-searchbar">
+        <input type="text" name="search" id="" />
+        <button><i data-feather="search"></i></button>
+      </div>
+
+      <div class="nav-extend">
+        <div class="side-left">
+          <a href="" class="btn"
+            ><i data-feather="heart" class="nav-extend-icon"></i
+          ></a>
+          <a href="" class="btn"
+            ><i data-feather="shopping-bag" class="nav-extend-icon"></i
+          ></a>
+        </div>
+        <div class="side-right">
+          <a href="#">Login / Register</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="container">
+      <div class="carousel-home">
+        <div class="carousel-curr">
+          <div class="carousel-images" id="carouselImages">
+            <div class="images-item">
+              <img src="source/carsel1.jpg" alt="" />
+            </div>
+            <div class="images-item">
+              <img src="source/carsel2.jpg" alt="" />
+            </div>
+            <div class="images-item">
+              <img src="source/carsel3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="carouselBack()" id="navCarouselPrev">
+          <i data-feather="chevron-left"></i>
+        </button>
+        <button class="next" onclick="carouselAuto()" id="navCarouselNext">
+          <i data-feather="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="categories">
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/713d/e4cd/6187476dbdbb/46f70f69d8e4/03055572712-e1/03055572712-e1.jpg?ts=1711120355975&w=292"
+            alt=""
+          />
+          <p>Pakaian Wanita</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/3a3b/89b4/4c434c9d84a2/96c41cb257f5/01182401401-p/01182401401-p.jpg?ts=1711559189939&w=438"
+            alt=""
+          />
+          <p>Pakaian Pria</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/08f0/857c/a82f4781b90d/4e23a8c72c90/01564521800-e1/01564521800-e1.jpg?ts=1709802667771&w=324"
+            alt=""
+          />
+          <p>Celana Panjang</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/499c/736a/7f804560a0cc/a30539249256/03090403105-e1/03090403105-e1.jpg?ts=1707295717474&w=324"
+            alt=""
+          />
+          <p>Kemeja</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/d5fd/d6e0/8f774774be3a/6384a4c8d2d0/05585425445-a1/05585425445-a1.jpg?ts=1703837764468&w=486"
+            alt=""
+          />
+          <p>Jeans</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/6c59/fe00/d8b14882bc5e/c921457dcb73/16208310800-e1/16208310800-e1.jpg?ts=1705306618237&w=324"
+            alt=""
+          />
+          <p>Tas</p>
+        </div>
+        <div class="subCategories">
+          <img
+            src="https://static.zara.net/assets/public/a337/ff51/89ce48958d25/9b5629d89e3f/12433320400-e2/12433320400-e2.jpg?ts=1707998123174&w=324"
+            alt=""
+          />
+          <p>Sepatu</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="item-title">Just for You</p>
+      <div class="item-list">
+        <a class="item-card" href="/view/productDetail.html">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="item-title">Best Selling</p>
+      <div class="item-list">
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="item-title">By Reference</p>
+      <div class="item-list">
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p> (10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+        <a class="item-card">
+          <img
+            src="https://static.zara.net/assets/public/67aa/3c5b/77454844bf1e/a2f25f37e632/07200451670-p/07200451670-p.jpg?ts=1711024247446&w=486"
+            alt=""
+          />
+          <div class="item-card-body">
+            <p class="title">KEMEJA STRUKTUR RENDA</p>
+            <p class="price">Rp 1.099.900</p>
+            <div class="rating">
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <i data-feather="star" class="rate-star"></i>
+              <p>(10)</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <script>
+      carouselAuto();
+
+      setInterval(carouselAuto, 5000);
+      feather.replace();
+    </script>
+  </body>
+</html>
