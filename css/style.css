@@ -313,11 +313,14 @@
 .container .item-list{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .item-list .item-card{
     width: 18.5%;
+    margin: 0 0.75%;
+    margin-top: 1.3rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: black;
@@ -992,4 +995,15 @@
     color: var(--primary);
     border-radius: 15px;
     border: 2px solid var(--primary);
+}
+
+.container .wishlist-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75%;
+}
+
+.wishlist-head span{
+    font-weight: bold;
 }
