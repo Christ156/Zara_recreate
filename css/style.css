@@ -1045,14 +1045,22 @@
     font-size: 15px;
     padding: 1rem;
 }
+
 .voucher .voucher-modal .modal-body .input-code .submit{
     width: 27%;
     border-radius: 15px;
+    border: 2px solid var(--primary);
     background: var(--primary);
     color: white;
     font-size: 15px;
     font-weight: bold;
     padding: 1rem;
+}
+
+.voucher .voucher-modal .modal-body .input-code .submit:hover{
+    border: 2px solid var(--primary);
+    background: white;
+    color: var(--primary);
 }
 
 .voucher .voucher-modal .modal-body .voucher-list{
