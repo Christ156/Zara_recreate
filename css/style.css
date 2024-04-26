@@ -215,6 +215,7 @@
 .container{
     width: 100%;
     padding: 10px 110px;
+    position: relative;
 }
 
 .divider{
@@ -995,6 +996,98 @@
     color: var(--primary);
     border-radius: 15px;
     border: 2px solid var(--primary);
+}
+
+.voucher{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.voucher .voucher-modal{
+    width: 60%;
+    height: 95%;
+    border-radius: 15px;
+    background: white;
+    padding: 3rem;
+}
+
+.voucher .voucher-modal .modal-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.voucher .voucher-modal .modal-header button{
+    background: none;
+}
+
+.voucher .voucher-modal .modal-body .input-code{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.voucher .voucher-modal .modal-body .input-code .text{
+    border: 1px solid var(--secondary);
+    border-radius: 15px;
+    width: 72%;
+    font-size: 15px;
+    padding: 1rem;
+}
+.voucher .voucher-modal .modal-body .input-code .submit{
+    width: 27%;
+    border-radius: 15px;
+    background: var(--primary);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.voucher .voucher-modal .modal-body .voucher-list{
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: 1px solid var(--secondary);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.voucher-list .select-voucher{
+    width: 1.5rem;
+    accent-color: var(--primary);
+}
+
+.voucher-list .voucher-list-detail{
+    height: 100%;
+}
+
+.voucher-list .voucher-list-detail .title-voucher{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.voucher-list .voucher-list-detail .min-buy{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.voucher-list .voucher-list-detail .remaining{
+    font-size: 15px;
+    color: var(--font);
+    margin-top: 1rem;
 }
 
 .container .wishlist-head{

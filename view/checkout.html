@@ -69,6 +69,38 @@
     <!-- End Navbar -->
 
     <!-- Content -->
+    <div class="voucher" id="voucher">
+      <div class="voucher-modal">
+        <div class="modal-header">
+          <p>Select Voucher</p>
+          <button onclick="voucherModal()"><i data-feather="x"></i></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="input-code">
+            <input class="text" type="text" name="" id="" placeholder="Input voucher code here">
+            <input class="submit" type="button" value="Pakai">
+          </form>
+          <hr class="divider">
+          <div class="voucher-list">
+            <div class="voucher-list-detail">
+              <p class="title-voucher">Diskon 10% hingga 100rb</p>
+              <p class="min-buy">min. Belanja Rp100.000</p>
+              <p class="remaining">Berakhir 1 hari lagi!</p>
+            </div>
+            <input class="select-voucher" type="radio" name="voucher" id="">
+          </div>
+          <div class="voucher-list">
+            <div class="voucher-list-detail">
+              <p class="title-voucher">Diskon 5% hingga 200rb</p>
+              <p class="min-buy">min. Belanja Rp150.000</p>
+              <p class="remaining">Berakhir 3 hari lagi!</p>
+            </div>
+            <input class="select-voucher" type="radio" name="voucher" id="">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <p class="title">Shopping Cart</p>
       <hr class="divider" />
@@ -152,7 +184,7 @@
         </div>
         <div class="side-right">
           <div class="sub-payment">
-            <button class="voucher-btn">Select or input voucher</button>
+            <button class="voucher-btn" onclick="voucherModal()">Select or input voucher</button>
             <hr class="divider" />
             <div class="price-item">
               <p>Subtotal(1 Product)</p>
