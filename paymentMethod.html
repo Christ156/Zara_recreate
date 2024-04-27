@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Payment Method</title>
+    <link rel="stylesheet" href="css/stylePayment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Select a Payment Method</h2>
+        <form action="#" id="payment-form">
+            <div class="form-group">
+                <input type="radio" id="visa" name="payment" value="visa">
+                <label for="visa"><img src="source/visa.png" alt="VISA" class="payment-icon"> VISA</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="mastercard" name="payment" value="mastercard">
+                <label for="mastercard"><img src="source/mastercard.png" alt="Mastercard" class="payment-icon"> Mastercard</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="online-banking" name="payment" value="online-banking">
+                <label for="online-banking"><img src="source/onlineBanking.jpg" alt="Online Banking" class="payment-icon"> Online Banking</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="bank-transfer" name="payment" value="bank-transfer" >
+                <label for="bank-transfer"><img src="source/bankTransfer.png" alt="Bank Transfer/Virtual Account" class="payment-icon"> Bank Transfer/Virtual Account</label>
+            </div>
+            <button type="submit">Proceed</button>
+        </form>
+
+        <div class="payment-summary">
+            <h3 class="cen">Payment Summary</h3>
+            <div class="sum">
+                <p class="align-left">Purchase total</p>
+                <p class="align-right">Rp 1.099.000</p>
+            </div>
+            <div class="sum">
+                <p class="align-left">Service Charge</p>
+                <p class="align-right">Rp 10.000</p>
+            </div>
+            <div class="sum">
+                <p class="align-left">Discount</p>
+                <p class="align-right"><s>Rp 100.000</s></p>
+            </div>
+            <hr class="divider">
+            <div class="sum">
+                <p class="align-left">Total Price</p>
+                <p class="align-right">Rp 1.009.000</p>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/scriptPayment.js"></script>
+</body>
+</html>
