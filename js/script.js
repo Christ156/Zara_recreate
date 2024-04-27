@@ -86,3 +86,20 @@ function sizeOpt(size){
         buttonSize[3].style.background = "black";
     }
 }
+
+var voucherModalState = 0;
+
+function voucherModal(){
+
+    var voucher = document.getElementById("voucher");
+
+    if(voucherModalState == 0){
+        voucherModalState = 1;
+
+        voucher.style.display = "flex";
+    }else{
+        voucherModalState = 0;
+
+        voucher.style.display = "none";
+    }
+}
