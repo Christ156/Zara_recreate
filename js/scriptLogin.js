@@ -1,6 +1,6 @@
-const form = document.querySelector('.login-container form');
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
+const form = document.getElementById('form');
+const emailInput = document.getElementById('emailInput');
+const passwordInput = document.getElementById('passwordInput');
 
 form.addEventListener('submit', e => {
     e.preventDefault();

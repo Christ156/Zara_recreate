@@ -16,19 +16,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="login-container">
+<!-- <body style="background: url('https://jokowi-meme.vercel.app/static/media/bgBanteng2.5ae0f351.jpg'); background-size: cover;"> -->
+    <div class="login-container" id="login-container">
         <h2>Login</h2>
-        <form action="index.html">
-            <div class="form-group">
+        <form id="form" action="index.html" method="post">
+            <div class="form-group" id="email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="email" id="emailInput" name="email" placeholder="Enter your email">
+                <div class="error-message"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="password">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <input type="password" id="passwordInput" name="password" placeholder="Enter your password">
+                <div class="error-message"></div>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" value="Login" id="submit">Login Bagong</button>
         </form>
         <p>Don't have an account yet? <a href="register.html">Click here to register</a></p>
     </div>
