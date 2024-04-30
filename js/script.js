@@ -59,6 +59,7 @@ function previewProduct(imageNum) {
 function sizeOpt(size){
     var sizeCurr = document.getElementById("sizeCurr");
     var buttonSize = document.getElementsByClassName("size-opt");
+    var addCartButton = document.getElementById("addCartButton");
 
     //Inisialisasi style default
     for(var i = 0; i < buttonSize.length; i++){
@@ -72,18 +73,22 @@ function sizeOpt(size){
         sizeCurr.innerText = "M";
         buttonSize[0].style.color = "white";
         buttonSize[0].style.background = "black";
+        addCartButton.className = "cart";
     }else if(size == 2){
         sizeCurr.innerText = "L";
         buttonSize[1].style.color = "white";
         buttonSize[1].style.background = "black";
+        addCartButton.className = "cart";
     }else if(size == 3){
         sizeCurr.innerText = "XL";
         buttonSize[2].style.color = "white";
         buttonSize[2].style.background = "black";
+        addCartButton.className = "cart";
     }else if(size == 4){
         sizeCurr.innerText = "XXL";
         buttonSize[3].style.color = "white";
         buttonSize[3].style.background = "black";
+        addCartButton.className = "cart";
     }
 }
 
