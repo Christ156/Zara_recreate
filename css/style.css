@@ -115,6 +115,14 @@
     color: var(--primary);
 }
 
+.nav-extend .side-right .before{
+    display: block;
+}
+
+.nav-extend .side-right .after{
+    display: none;
+}
+
 .footer{
     width: 100%;
     padding: 15px 110px;
@@ -966,12 +974,40 @@
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
+    display: none;
 }
 
 .sub-payment .voucher-btn:hover{
     background: var(--primary);
     color: var(--secondary);
     border: 2px solid var(--primary);
+}
+
+.side-right .sub-payment .voucher-use{
+    display: block;
+    width: 100%;
+    height: 100px;
+    box-shadow: 2px 2px var(--secondary);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 0.8rem;
+    border: 2px solid black;
+}
+
+.voucher-use .voucher-list-detail{
+    height: 100%;
+}
+
+.voucher-use .voucher-list-detail .title-voucher{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.voucher-use .voucher-list-detail .remaining{
+    font-size: 15px;
+    color: var(--font);
+    margin-top: 1rem;
 }
 
 .sub-payment .price-item{

@@ -62,7 +62,8 @@
           ></a>
         </div>
         <div class="side-right">
-          <a href="login.html">Login / Register</a>
+          <a href="login.html" class="before" id="beforeLogin">Login / Register</a>
+          <a href="" onclick="loginAction()" class="after" id="afterLogin">Halo, Prabowo</a>
         </div>
       </div>
     </div>
@@ -488,8 +489,8 @@
 
     <script>
       carouselAuto();
-
       setInterval(carouselAuto, 5000);
+
       feather.replace();
     </script>
   </body>
