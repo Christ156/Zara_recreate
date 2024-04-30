@@ -644,6 +644,7 @@
 
 .ratereview .content{
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .ratereview .content .review{
@@ -703,7 +704,7 @@
 
 .ratereview .content .dashboard{
     width: 30%;
-    height: 50vh;
+    margin-bottom: 50px;
 }
 
 .dashboard .dash-head{
@@ -1183,4 +1184,35 @@
 
 .wishlist-head span{
     font-weight: bold;
+}
+
+@media only screen and (max-width: 800px){
+    .container .viewProduct{
+        display: block;
+    }
+
+    .viewProduct .preview{
+        width: 100%;
+    }
+
+    .viewProduct .detail{
+        width: 100%;
+        padding: 0;
+    }
+
+    .ratereview .content{
+        display: block;
+    }
+
+    .ratereview .content .dashboard{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ratereview .content .review{
+        width: 100%;
+        padding: 0;
+    }
 }
