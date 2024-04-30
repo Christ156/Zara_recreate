@@ -92,6 +92,23 @@ function sizeOpt(size){
     }
 }
 
+function tabDesc(num){
+
+    if(num == 1){
+        document.getElementById("desc"+1).style.display = "block";
+        document.getElementById("desc"+2).style.display = "none";
+
+        document.getElementById("tabDesc"+1).classList.add("tab-active");
+        document.getElementById("tabDesc"+2).classList.remove("tab-active");
+    }else{
+        document.getElementById("desc"+1).style.display = "none";
+        document.getElementById("desc"+2).style.display = "block";
+
+        document.getElementById("tabDesc"+2).classList.add("tab-active");
+        document.getElementById("tabDesc"+1).classList.remove("tab-active");
+    }
+}
+
 var voucherModalState = 0;
 
 function voucherModal(){

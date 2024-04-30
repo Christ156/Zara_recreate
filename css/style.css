@@ -626,6 +626,11 @@
     color: var(--font);
 }
 
+.detail .desc p span{
+    color: var(--primary);
+    font-weight: bold;
+}
+
 .container .ratereview{
     width: 100%;
 }
