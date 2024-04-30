@@ -1187,6 +1187,10 @@
 }
 
 @media only screen and (max-width: 800px){
+    .container{
+        padding: 10px 30px;
+    }
+
     .container .viewProduct{
         display: block;
     }
@@ -1214,5 +1218,17 @@
     .ratereview .content .review{
         width: 100%;
         padding: 0;
+    }
+
+    .shopping-cart{
+        display: block;
+    }
+
+    .shopping-cart .side-left{
+        width: 100%;
+    }
+
+    .shopping-cart .side-right{
+        width: 100%;
     }
 }
