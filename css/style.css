@@ -993,7 +993,7 @@
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
-    display: none;
+    display: block;
 }
 
 .sub-payment .voucher-btn:hover{
@@ -1003,7 +1003,7 @@
 }
 
 .side-right .sub-payment .voucher-use{
-    display: block;
+    display: none;
     width: 100%;
     height: 100px;
     box-shadow: 2px 2px var(--secondary);
