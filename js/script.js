@@ -1,3 +1,17 @@
+var dropdown = false;
+
+function navDropdown(){
+    if(dropdown == false){
+        dropdown = true;
+
+        document.getElementById("nav-Dropdown").style.display = "block";
+    }else{
+        dropdown = false;
+
+        document.getElementById("nav-Dropdown").style.display = "none";
+    }
+}
+
 var pos = 0;
 
 function carouselBack(){

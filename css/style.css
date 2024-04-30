@@ -104,6 +104,10 @@
     margin: 0 10px;
 }
 
+.nav-extend .side-left .btn-dropdown{
+    display: none;
+}
+
 .nav-extend .side-right{
     display: flex;
     justify-content: center;
@@ -121,6 +125,20 @@
 
 .nav-extend .side-right .after{
     display: none;
+}
+
+.navbar .nav-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 30%;
+    background: white;
+    border: 2px solid var(--secondary);
+    top: 122px;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary);
 }
 
 .footer{
@@ -1236,6 +1254,40 @@
     }
 
     .shopping-cart .side-right{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 15px 30px;
+    }
+
+    .navbar .nav-icon{
+        display: none;
+    }
+
+    .navbar .nav-searchbar{
+        width: 70%;
+    }
+
+    .navbar .nav-extend{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .nav-extend .side-right{
+        display: none;
+    }
+
+    .nav-extend .side-left .btn{
+        margin: 0 5px;
+    }
+
+    .navbar .nav-extend .side-left .btn-dropdown{
+        display: block;
+    }
+
+    .navbar .nav-dropdown{
         width: 100%;
     }
 }

@@ -55,16 +55,29 @@
       <div class="nav-extend">
         <div class="side-left">
           <a href="./view/wishlist.html" class="btn"
-            ><i data-feather="heart" class="nav-extend-icon" ></i
+            ><i data-feather="heart" class="nav-extend-icon"></i
           ></a>
           <a href="./view/checkout.html" class="btn"
             ><i data-feather="shopping-bag" class="nav-extend-icon"></i
           ></a>
+          <a onclick="navDropdown()" class="btn btn-dropdown"
+            ><i data-feather="menu" class="nav-extend-icon"></i
+          ></a>
         </div>
         <div class="side-right">
-          <a href="login.html" class="before" id="beforeLogin">Login / Register</a>
-          <a href="" onclick="loginAction()" class="after" id="afterLogin">Halo, Prabowo</a>
+          <a href="login.html" class="before" id="beforeLogin"
+            >Login / Register</a
+          >
+          <a href="" onclick="loginAction()" class="after" id="afterLogin"
+            >Halo, Prabowo</a
+          >
         </div>
+      </div>
+
+      <div class="nav-dropdown" id="nav-Dropdown">
+        <a href="login.html" id="beforeLogin"
+            >Logout</a
+          >
       </div>
     </div>
     <!-- End Navbar -->
@@ -357,7 +370,7 @@
               <i data-feather="star" class="rate-star"></i>
               <i data-feather="star" class="rate-star"></i>
               <i data-feather="star" class="rate-star"></i>
-              <p> (10)</p>
+              <p>(10)</p>
             </div>
           </div>
         </a>
@@ -469,20 +482,28 @@
         </div>
         <div class="subscribe">
           <form action="" method="post" class="form-subs">
-            <input class="input-email" type="email" name="" id="">
-            <input class="input-submit" type="button" value="Subscribe">
+            <input class="input-email" type="email" name="" id="" />
+            <input class="input-submit" type="button" value="Subscribe" />
           </form>
 
           <div class="sosmed">
-            <a href="https://www.instagram.com/zara/" target="_blank"><i data-feather="instagram" class="icon"></i></a>
-            <a href="https://www.facebook.com/Zara" target="_blank"><i data-feather="facebook" class="icon"></i></a>
-            <a href="https://twitter.com/ZARA" target="_blank"><i data-feather="x" class="icon"></i></a>
-            <a href="https://www.youtube.com/user/zara" target="_blank"><i data-feather="youtube" class="icon"></i></a>
+            <a href="https://www.instagram.com/zara/" target="_blank"
+              ><i data-feather="instagram" class="icon"></i
+            ></a>
+            <a href="https://www.facebook.com/Zara" target="_blank"
+              ><i data-feather="facebook" class="icon"></i
+            ></a>
+            <a href="https://twitter.com/ZARA" target="_blank"
+              ><i data-feather="x" class="icon"></i
+            ></a>
+            <a href="https://www.youtube.com/user/zara" target="_blank"
+              ><i data-feather="youtube" class="icon"></i
+            ></a>
           </div>
         </div>
       </div>
       <div class="bottom">
-          <p>&copy;Copyright Powered by Bolobolo</p>
+        <p>&copy;Copyright Powered by Bolobolo</p>
       </div>
     </footer>
     <!-- End Footer -->
