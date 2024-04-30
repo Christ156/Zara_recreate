@@ -282,6 +282,12 @@
     right: -23px;
 }
 
+.carousel-home .prev:hover, .carousel-home .next:hover{
+    background: var(--primary);
+    color: white;
+    border: 2px solid white;
+}
+
 .carousel-home .carousel-curr{
     width: 100%;
     height: 100%;
