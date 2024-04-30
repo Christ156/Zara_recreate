@@ -1290,4 +1290,31 @@
     .navbar .nav-dropdown{
         width: 100%;
     }
+
+    .footer{
+        padding: 15px 30px;
+    }
+
+    .footer .top{
+        display: block;
+    }
+
+    .footer .top .logo{
+        width: 100%;
+    }
+
+    .footer .top .company{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer .top .policy{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .footer .top .subscribe{
+        margin-top: 2rem;
+        width: 100%;
+    }
 }
