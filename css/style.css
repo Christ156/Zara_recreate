@@ -1303,6 +1303,11 @@
         width: 100%;
     }
 
+    .footer .top .logo svg{
+        width: auto;
+        height: 100%;
+    }
+
     .footer .top .company{
         width: 100%;
         margin-top: 2rem;
