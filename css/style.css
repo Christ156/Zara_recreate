@@ -266,7 +266,9 @@
 .carousel-home .prev, .carousel-home .next{
     position: absolute;
     z-index: 2;
-    height: 13%;
+    width: 10%;
+    max-width: 50px;
+    min-width: 35px;
     top: 40%;
     aspect-ratio: 1/1;
     background: white;
@@ -365,7 +367,7 @@
 
 .item-list .item-card{
     width: 18.5%;
-    min-width: 152px;
+    min-width: 130px;
     max-width: 200px;
     margin: 0 auto;
     margin-top: 1.3rem;
