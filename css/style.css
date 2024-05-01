@@ -1364,10 +1364,16 @@
     .item-list-body .product .price p{
         font-size: 13px;
     }
+
+    .voucher{
+        padding-bottom: 0;
+    }
     
     .voucher .voucher-modal{
+        position: absolute;
         width: 100%;
         height: 90%;
+        bottom: 0;
         border-radius: 0;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
