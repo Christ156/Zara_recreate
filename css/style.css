@@ -594,7 +594,6 @@
 
 .viewProduct .detail .shipping{
     margin: 20px 0;
-    height: 115px;
 }
 
 .detail .shipping .title{
@@ -606,7 +605,6 @@
 .detail .shipping .address{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .detail .shipping .address .city{
@@ -625,6 +623,7 @@
 
 .detail .shipping .address .change{
     font-weight: bold;
+    text-align: right;
 }
 
 .detail .shipping .courier{
@@ -1254,8 +1253,6 @@
     .ratereview .content .dashboard{
         width: 100%;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
     }
 
     .ratereview .content .review{
