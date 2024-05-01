@@ -1052,7 +1052,6 @@
     display: none;
     width: 100%;
     height: 100px;
-    box-shadow: 2px 2px var(--secondary);
     border-radius: 15px;
     margin-bottom: 10px;
     padding: 0.8rem;
@@ -1364,5 +1363,14 @@
 
     .item-list-body .product .price p{
         font-size: 13px;
+    }
+    
+    .voucher .voucher-modal{
+        width: 100%;
+        height: 90%;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 1.3rem;
     }
 }
