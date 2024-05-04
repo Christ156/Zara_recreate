@@ -1307,6 +1307,10 @@
         width: 100%;
     }
 
+    .navbar .nav-dropdown a{
+        color: var(--primary);
+    }
+
     .footer{
         padding: 15px 30px;
     }
