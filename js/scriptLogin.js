@@ -29,9 +29,6 @@ function validateInputs() {
     } else {
         setSuccess(passwordInput);
     }
-
-    // Redirect to index.html
-    window.location.href = "./index.html";
 }
 
 function setError(input, message) {
