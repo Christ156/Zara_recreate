@@ -1,11 +1,11 @@
-const form = document.getElementById('form');
+// const form = document.getElementById('form');
 const emailInput = document.getElementById('emailInput');
 const passwordInput = document.getElementById('passwordInput');
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    validateInputs();
-});
+// form.addEventListener('submit', e => {
+//     e.preventDefault();
+//     validateInputs();
+// });
 
 function validateInputs() {
     const emailVal = emailInput.value.trim();
@@ -50,6 +50,7 @@ function setSuccess(input) {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
+    
 }
 
 function isValidEmailAddress(email) {

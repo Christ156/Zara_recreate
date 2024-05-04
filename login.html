@@ -11,6 +11,10 @@
       href="https://static.zara.net/stdstatic/5.40.1//images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/styleLogin.css">
+
+    <!-- <script defer src="./js/script.js"></script> -->
+    <script defer src="js/scriptLogin.js"></script>
+
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +23,7 @@
 <!-- <body style="background: url('https://jokowi-meme.vercel.app/static/media/bgBanteng2.5ae0f351.jpg'); background-size: cover;"> -->
     <div class="login-container" id="login-container">
         <h2>Login</h2>
-        <form id="form" action="index.html" method="post">
+        <form id="formLogin" action="index.html" method="post">
             <div class="form-group" id="email">
                 <label for="email">Email</label>
                 <input type="email" id="emailInput" name="email" placeholder="Enter your email" required>
@@ -32,8 +36,7 @@
             </div>
             <button type="submit" value="Login" id="submit">Login</button>
         </form>
-        <p>Don't have an account yet? <a href="register.html">Click here to register</a></p>
+        <p>Don't have an account yet? <a href="./register.html">Click here to register</a></p>
     </div>
-    <script defer src="js/scriptLogin.js"></script>
 </body>
 </html>
