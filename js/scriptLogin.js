@@ -1,11 +1,11 @@
-// const form = document.getElementById('form');
+const form = document.getElementById('form');
 const emailInput = document.getElementById('emailInput');
 const passwordInput = document.getElementById('passwordInput');
 
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
-//     validateInputs();
-// });
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    validateInputs();
+});
 
 function validateInputs() {
     const emailVal = emailInput.value.trim();
@@ -14,8 +14,10 @@ function validateInputs() {
     // Validate Email
     if (emailVal === '') {
         setError(emailInput, 'Email is required');
+        return;
     } else if (!isValidEmailAddress(emailVal)) {
         setError(emailInput, 'Invalid email address format');
+        return;
     } else {
         setSuccess(emailInput);
     }
@@ -23,15 +25,13 @@ function validateInputs() {
     // Validate Password
     if (passwordVal === '') {
         setError(passwordInput, 'Password is required');
+        return;
     } else {
         setSuccess(passwordInput);
     }
 
-    // Check if both email and password are valid
-    if (isValidEmailAddress(emailVal) && passwordVal !== '') {
-        // Redirect to index.html
-        window.location.href = "index.html";
-    }
+    // Redirect to index.html
+    window.location.href = "index.html";
 }
 
 function setError(input, message) {
@@ -50,7 +50,6 @@ function setSuccess(input) {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-    
 }
 
 function isValidEmailAddress(email) {
