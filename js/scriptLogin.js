@@ -31,7 +31,7 @@ function validateInputs() {
     }
 
     // Redirect to index.html
-    window.location.href = "Zara_recreate/index.html";
+    window.location.href = "./index.html";
 }
 
 function setError(input, message) {
