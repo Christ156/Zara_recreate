@@ -67,6 +67,6 @@ button[type="submit"]:hover {
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     .form-group input {
-        width: calc(100% - 50px); /* Adjust width for smaller screens */
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
     }
 }
