@@ -595,8 +595,6 @@
     border: 2px solid var(--primary);
 }
 
-
-
 .viewProduct .detail .shipping{
     margin: 20px 0;
 }
@@ -1043,6 +1041,7 @@
     font-weight: bold;
     margin-bottom: 10px;
     display: block;
+    transition: 0.2s linear;
 }
 
 .sub-payment .voucher-btn:hover{
@@ -1108,10 +1107,14 @@
     background: var(--primary);
     width: 100%;
     height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
     font-size: 15px;
     font-weight: bold;
     color: var(--secondary);
     margin-top: 10px;
+    transition: 0.2s linear;
 }
 
 .sub-payment .pay-btn:hover{

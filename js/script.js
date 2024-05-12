@@ -193,10 +193,16 @@ function clickFav(){
     if(fav == 0){
         fav_btn.style.color = "red";
         fav_btn.style.fill = "red";
+        fav_btn.style.width = "30px";
+        fav_btn.style.height = "3p0px";
+        fav_btn.style.transition = "1s linear";
         fav = 1;
     }else{
-        fav_btn.style.color = "var(--primary)";
-        fav_btn.style.fill = "none";
+        fav_btn.style.color = "";
+        fav_btn.style.fill = "";
+        fav_btn.style.width = "24px";
+        fav_btn.style.height = "24px";
+        fav_btn.style.transition = "1s linear";
         fav = 0;
     }
 }
