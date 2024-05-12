@@ -256,7 +256,6 @@
 
 .container .carousel-home{
     width: 95%;
-    height: 35vw;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -292,7 +291,6 @@
 
 .carousel-home .carousel-curr{
     width: 100%;
-    height: 100%;
     justify-content: center;
     overflow: hidden;
 }
@@ -300,17 +298,13 @@
 .carousel-home .carousel-curr .carousel-images{
     position: relative;
     width: 100%;
-    height: 100%;
     display: flex;
     transition: 1s;
 }
 
 .carousel-images .images-item{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: var(--primary);
+    width: 100vw;
+    max-width: 100%;
 }
 
 .container .categories{
