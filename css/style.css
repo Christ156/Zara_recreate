@@ -368,7 +368,7 @@
 .item-list .item-card{
     width: 18.5%;
     min-width: 130px;
-    max-width: 200px;
+    max-width: 350px;
     margin: 0 auto;
     margin-top: 1.3rem;
     border-radius: 10px;
@@ -586,6 +586,7 @@
     justify-content: center;
     align-items: center;
     color: var(--primary);
+    background: transparent;
 }
 
 .viewProduct .detail .detail-btn .fav:hover{
@@ -593,6 +594,8 @@
     color: var(--secondary);
     border: 2px solid var(--primary);
 }
+
+
 
 .viewProduct .detail .shipping{
     margin: 20px 0;
